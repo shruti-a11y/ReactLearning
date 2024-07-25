@@ -1,0 +1,80 @@
+.weather {    
+  place-self: center;
+  padding: 40px;
+  border-radius: 10px;
+  background: #000046;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #1CB5E0, #000046);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #1CB5E0, #000046); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* max-height: 100vh; */
+}
+
+.search-bar{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.search-bar input{
+    height: 50px;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    padding-left: 25px;
+    color: #626262;
+    background: #ebfffc;
+    font-size: 18px;
+}
+
+.search-bar img{
+    width: 50px;
+    padding: 15px;
+    border-radius: 50%;
+    background: #ebfffc;
+    cursor: pointer;
+
+}
+
+.weather-icon{
+    width: 150px;
+    margin: 30px;
+}
+
+.temperture{
+    color: #ffff;
+    font-size: 80px;
+    line-height: 1;
+}
+.location{
+    color: #ffff;
+    font-size: 30px;
+    line-height: 1;
+}
+
+.weather_data{
+    width: 100%;
+    margin-top: 40px;
+    color: #ffff;
+    display: flex;
+    justify-content: space-between;
+}
+
+.weather_data .col{
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    font-size: 22px;
+}
+
+.weather_data .col span{
+    display: block;
+    font-size: 16px;
+}
+
+.weather_data .col img{
+    width: 26px;
+    margin-top: 10px;
+}
