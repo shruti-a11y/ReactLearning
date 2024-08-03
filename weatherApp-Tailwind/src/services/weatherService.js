@@ -77,7 +77,7 @@ const getFormattedWeatherData = async (searchParams) => {
     const formatedForcastWeather = await getWeatherData('forecast',{
         lat,
         lon,
-        // units:searchParams.units,
+        units:searchParams.units,
     }).then((d)=> formatForcastWeather(dt, timezone, d.list));
     return{...formatedCurrentWeather, ...formatedForcastWeather}
 }
